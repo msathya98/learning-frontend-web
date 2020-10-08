@@ -1,0 +1,47 @@
+nav li{
+	display:inline;
+	padding-left: 40px;
+	
+
+}
+nav ul {
+	margin-right: 50px;
+	padding-left: 30px;
+	margin-top: 10px;
+}
+nav a{
+	text-decoration: none;
+	color: gray;
+
+}
+nav a:hover{
+	color: black;
+	font-size: 15px;
+
+}
+
+.container_12{
+	background-color: blue;
+	margin-top: 10px;
+	font-style: italic;
+	
+}
+.primary{
+	background: gray;
+	margin-bottom: 10px;
+
+	}
+
+aside{
+	background : green;
+	
+}
+aside ul{
+	color: black;
+}
+header{
+	background: yellow;
+}
+.main{
+	margin: 20px 0;
+}
