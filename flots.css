@@ -1,0 +1,54 @@
+.wrap{
+	min-width: 600px;
+	width: 80%;
+	margin: auto;
+	background-color: #919191;
+	
+}
+h1{
+	text-align: center;
+}
+
+
+.content, .aside {
+	background-color: blue;
+	width: 79%;
+	height: 800px;
+	float: left;
+
+
+}
+.content{
+	padding-left: 1%;
+   
+	}
+
+.simple{
+	width: 600px;
+	height: 400px;
+	padding-left: 100px;
+
+}	
+.aside{
+	background-color: red;
+	width: 20%;
+	float: left;
+
+	
+}	
+ .aside ul{
+
+	list-style: none;
+	padding-left: 10px;
+
+}
+ul a:hover {
+	
+	text-size: 40px;
+	clour: black;
+
+}
+footer{
+	clear: both;
+	font-size: 10px;
+}

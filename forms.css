@@ -1,0 +1,13 @@
+li {
+	padding-bottom: 20px;
+	list-style: none;
+
+}
+ #comments{
+	width: 400px;
+	height: 250px; 
+	display: block;
+}
+#name{
+	display: block;
+}
