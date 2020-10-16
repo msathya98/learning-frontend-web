@@ -1,0 +1,19 @@
+body {
+	width: 800px;
+	height: 800px;
+
+}
+
+.box{
+	margin: auto;
+	width: 400px;
+	height: 500px;
+	
+	background: -webkit-gradient(linear, left top, left bottom, from(black), to(green)); 
+	
+	background: -o-linear-gradient(top, black, blue, green);
+	background: -webkit-linear-gradient(top, black, blue, green);
+	background: -moz-linear-gradient(top, black, blue, green);
+	background: linear-gradient(top, black, green);
+	color: white;
+}
