@@ -1,0 +1,40 @@
+.container{
+	width: 800px;
+	margin: auto;
+	overflow: hidden;
+}
+	
+
+li{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	list-style: none;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	background: #e3e3e3;
+
+
+}
+
+li:first-child{
+	background: red;
+}
+
+li:last-child{
+	background: green;
+}
+
+li:nth-child(2n+1){
+	background: green;
+}
+
+h2+p, h2~p{
+	font-size: 1.5em;
+	color: blue;
+
+}
