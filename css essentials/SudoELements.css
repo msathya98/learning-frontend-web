@@ -1,0 +1,16 @@
+<style>
+p::first-line{
+	font-weight: bold;
+	font-size: 2.5em;
+
+}
+
+p::first-letter{
+	font-size: 4am;
+	font-weight: bold;
+	float: left;
+	padding-right: 10px;
+	font-family: 'calagraffittti';
+
+
+}

@@ -1,0 +1,15 @@
+a[href*= "tutsplus"]{
+	color: green;
+}
+
+a[href$=".pdf"]:before{
+	content: 'PDF';
+	font-size: 11px;
+	font-family: sans-serif;
+	background: black;
+	color: white;
+    border-radius: 8px;
+    padding: 2px;
+    margin-right: 5px;
+
+}
