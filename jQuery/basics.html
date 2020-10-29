@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fisrt Jquery</title>
+</head>
+<body>
+	<h1>Welcome to my first jQuery </h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud  Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<ul class="simple">
+		<li>about</li>
+		<li>home</li>
+		<ul>
+			<li>hello</li>
+		</ul>
+		<li>sathya</li>
+		<li>exit</li>
+
+	</ul>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$('ul.simple').children('li').css('color','red');
+	//$('ul.simple').find('li').css('color','red');
+	$('ul.simple').children('li:first-child').addClass('simple');
+</script>
+</body>
+</html>
