@@ -23,7 +23,15 @@
 <script>
 	$('ul.simple').children('li').css('color','red');
 	//$('ul.simple').find('li').css('color','red');
-	$('ul.simple').children('li:first-child').addClass('simple');
+	//$('ul.simple').find('li').css('color','red');
+	//$('ul.simple').children('li:first-child').addClass('simple');
+	//$('ul.simple').children('li').first().addClass('simple');
+	//$('ul.simple').children('li:nth-child(2)').text('added jquery');
+	//$('ul.simple').children('li').eq(3).prev().text('added jquery1');
+    //$('li').parents('ul').removeClass('simple simple2');
+   console.log($('ul').closest('.container'));
+   console.log($('ul').parents('.container'));
+
 </script>
 </body>
 </html>
