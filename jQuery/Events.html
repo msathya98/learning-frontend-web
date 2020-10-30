@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events using jQuery</title>
+	<link rel="stylesheet" type="text/css" href="day.css">
+</head>
+<body>
+<h1>My website</h1>
+<button data-file="day">Day</button>
+<button data-file="night">Night</button>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script>
+		(function(){
+			var link= $('link');
+			
+			$('button').click(function(){
+				var $this = $(this), 
+				stylesheet= $this.data('file');
+				
+				
+				link.attr('href', stylesheet + '.css');
+				$this
+				.siblings('button')
+				.removeAttr('disabled')
+				.end()
+				.attr('disabled', 'disabled');
+
+			});
+		})();
+		/*(function(){
+			$('button').click(function(){
+				var stylesheet= $(this).text().toLowerCase();
+				console.log(stylesheet);
+				$('link').attr('href', stylesheet + ".css")
+			});
+		})();*/
+	</script>
+
+</body>
+</html>
