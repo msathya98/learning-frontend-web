@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Methods using jQuery</title>
+</head>
+<body>
+	<div class="container">
+	<h2>click me</h2>
+	<h2>click me</h2>
+	<h2>click me</h2>
+	<h2>click me</h2>
+</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+<script>
+	(function(){
+		$('h2').bind('click', function(){
+			console.log('clicked');
+			$(this).clone(true).appendTo('body');
+		/*$('div.container').delegate('h2','click',function(){
+			console.log('clicked');
+			$(this).clone().appendTo('container');*/
+		});
+	})();
+</script>
+</body>
+</html>
