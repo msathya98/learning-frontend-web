@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Methods using jQuery</title>
+	<style>
+		article{
+			width: 600px;
+			margin: auto;
+		}
+		blockquote.co {
+			float: right;
+			font-size: 2em;
+			background: #e3e3e3;
+			width: 25%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<h1>Welcome to our website</h1>
+		<p>
+			<span class = "co">this is span tag elements</span>, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		<span class = "co">Hello this is jQuery</span>,
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		qcupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</article>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script>
+		(function(){
+			//$('article').append('hello guys');   
+			//$('article').prepend('hello guys');   
+			//$('h1').after('heelo guys');  
+			//$('p').first().after('hello guys');  
+			/* $('<h2></h2>',{
+				text: 'hello from javascript',
+				class: 'myClass',
+			}).insertAfter('h1');
+
+			$('h1').prependTo('article');
+
+			$('p').eq(0).after(function(){
+				return $(this).prev(); */
+			
+			          var co = $('span.co').each(function(){
+			          	var $this = $(this);
+			            	$('<blockquote></blockquote>',{
+			            		class: 'co',
+			            		text: $this.text()
+			            	}).prependTo($this.closest('p'));
+
+			            	});
+			            })();
+	</script>
+</body>
+</html>
