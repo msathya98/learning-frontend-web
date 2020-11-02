@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Understanding this keyword</title>
+</head>
+<body>
+<a href="http://www.google.com">Click Me</a>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	//function doSomething(evt){
+		/*evt.preventDefault();
+	console.log(evt);
+	console.log(this);
+	}
+	//console.log(this);
+	$('a').on('click', doSomething);*/
+
+	var obj= {
+		doIt: function(evt){
+			console.log(this);
+			evt.preventDefault();
+		}
+	}
+	$('a').on('click', obj.doIt) 
+		//obj.doIt.call(this);
+	
+</script>
+</body>
+</html>
