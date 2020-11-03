@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>increse</title>
+	<style>
+		.box{
+			width: 400px;
+			background: red;
+			padding: 2em;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		<h2>Some conntext here</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+
+<p><button>Increase</button></p>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	(function(){
+		var box= $('div.box'),
+		    //fontSize = parseInt( box.css('font-size'), 10);
+
+		    //console.log(fontSize + 5);
+          w = $(window).width() / 2 - box.outerWidth() / 2,
+          h = $(window).height() / 2 - box.outerHeight() / 2;
+          //console.log(winWidth);
+
+		$('button').on('click', function(){
+			box.animate({
+				'left' : w,
+				'top': h,
+				'position': 'absolute'
+			});
+		});
+	
+			/* box.animate({
+				'fontSize': '+=5',
+				'width': 200,
+				
+			}, {
+			duration: 500,
+			 complete: function(){
+				console.log('completed');
+
+			},
+
+		step: function(){
+			console.log('the current font-size is: ' + $(this).css('fontSize'));
+		}
+			/*box.css({
+				'color': 'white',
+
+			}, 3000);
+		});
+
+		box.animate({
+			'fontSize': '+=5'
+		}, { duration: 500 })
+		.animate({ 'top': 500}, { duration: 3000, queue: false});*/
+		
+
+		
+	})();
+</script>
+</body>
+</html>
