@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mustache</title>
+</head>
+<body>
+
+	<ul class="tweets">
+		<script id="template" type="text/x-handlebars-template">
+			{{#each this}}
+			<li>
+				<h2>{{author}} {{#if age}} - <span> {{age}} </span> {{/if}}</h2>
+				<p>{{tweet}}</p>
+
+			{{#unless quote}}
+			<h5>Author does not have a quote.</h5>	
+			{{/unless}}
+
+			</li>
+			{{/each}}
+		</script>
+	</ul>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+<script type="text/javascript" src="handlebars-v4.7.6.js"></script>
+
+<script>
+	(function(){
+		var data = {
+			author: 'jeffry way',
+			tweet: '30day jquery rocks',
+			age: 22,
+			quote: 'never ever give up'
+
+		},
+		author: 'beffry way',
+			tweet: '30day jquery shocks',
+			age: 55,
+			quote: 'work smart not hard'
+		};	
+
+		var template = handlebars.compaile($('#template').html());
+		$('ul.tweets').append( template(data));
+	})();
+</script>
+</body>
+</html>
