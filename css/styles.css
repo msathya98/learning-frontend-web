@@ -2,6 +2,7 @@
 	background-color: #ff4c68;
 }
 .navbar-brand{
+	padding-top: 40px;
 	padding-left: 80px;
     font-family: "Ubuntu";
     font-size: 2rem;
@@ -19,11 +20,11 @@
 	padding-bottom: 4rem;
 }
 .nav-item{
-	padding: 0 18px;
+	padding: 0 25px;
 }
 
 .nav-link{
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 
 }
 .row{
@@ -38,7 +39,7 @@
  	width: 40%;
  	left: 20%;
 
- 	transform: rotate(22deg);
+ 	transform: rotate(25deg);
  	padding-top: 50px;
  }
 
@@ -115,8 +116,45 @@
  }
 
  .card{
- 	padding: 
+ 	text-align: center;
+ 	padding: 4% 10%;
  }
  .side {
  	font-size: 1.2rem;
  }
+
+ @media (max-width: 1026px){
+ 	#title{
+ 		text-align: center;
+ 	}
+ 	.title-img{
+ 		position: static;
+ 		transform: rotate(0);
+ 		padding-bottom: 20px;
+ 	}
+ }
+
+ #cta{
+ 	background-color: #ff4c68;
+ 	font-style: "Montserrat-Bold";
+ 	text-align: center;
+ 	padding: 10% 15%;
+ }
+.last{
+ font-size: 300%;
+ color: #fff;
+ padding-bottom: 20px;
+}
+
+  #footer{
+  	text-align: center;
+  	padding: 8% 15%;
+  	color: gray;
+
+  }
+  .social{
+  	color: black;
+  	letter-spacing: 10px;
+  	padding-bottom: 10px;
+  }
+
