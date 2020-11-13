@@ -32,3 +32,19 @@ NodeList []length: 0__proto__: NodeList
 
 document.querySelectorAll("#list")
 NodeList []
+
+document.firstElementChild.lastElementChild.style.backgroundColor = "yellow"
+"yellow"
+
+document.querySelector("button").style.backgroundColor = "blue"
+"blue"
+
+document.firstElementChild.lastElementChild.textContent = "yellow"
+"yellow"
+
+
+document.querySelector("a").setAttribute("href", "https://www.bing.com")
+                                         
+undefined
+document.querySelector("a").getAttribute("href")
+"https://www.bing.com"
