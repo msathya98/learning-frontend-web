@@ -1,0 +1,34 @@
+document.firstElementChild
+<html lang=​"en" dir=​"ltr">​<head>​…​</head>​<body>​…​</body>​</html>​
+
+document.firstElementChild.lastElementChild
+<body>​…​</body>​
+
+document.firstElementChild.lastElementChild.lastElementChild.lastElementChild.innerHTML = "sathya"
+"sathya"
+
+document.firstElementChild.lastElementChild.lastElementChild.lastElementChild
+<li class=​"list">​…​</li>​
+
+document.getElementsByTagName("li")
+HTMLCollection(3) [li.list, li.list, li.list]
+
+document.getElementsByTagName("li")[1].style.color = "blue"
+"blue"
+
+document.getElementsByTagName("li")[2].style.color = "green"
+"green"
+
+document.getElementsByTagName("li")[0].style.color = "red"
+"red"
+
+
+document.getElementsByTagName("a")[0].style.color = "red"
+"red"
+
+
+document.querySelectorAll("#list .item")
+NodeList []length: 0__proto__: NodeList
+
+document.querySelectorAll("#list")
+NodeList []
